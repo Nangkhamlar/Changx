@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;   
+}
+
+
+:root{
+    --text-color:#929292;
+    --secondary-color:#f5f5f5;
+    --main-color:#4365FF;
+}
+
+
+.dashboard{
+  
+  background-color: #f5f5f5;
+  padding: 20px;
+  
+  min-width: 240px;
+}
+
+
+.logo{
+    padding:10px;
+    border-bottom: 1px solid var(--text-color)
+    
+}
+.logo img{
+    width:42px;
+    height:42px;
+    margin-right: 10px;
+}
+.logo span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu{
+    color:var(--text-color);
+}
+
+.menu .btn i{
+  color:var(--text-color);
+  padding-right: 10px;
+  
+}
+.btn i{
+    color:var(--text-color);
+}
+.menu .btn { 
+    
+    text-align: start;
+    margin-bottom: 10px;  
+}
+.active{
+    background: var(--main-color);
+    color:#fff;
+    width:100%;
+}
+
+.marily-card{
+    width:100%;
+    border:1px solid #fff;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 390px;
+}
+
+.marily{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    text-align:start;
+    
+}
+.marily img{
+    padding-right:10px ;
+}
+
+/* List */
+.list-orders{
+    padding:10px;
+}
+.menu-route{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: flex-start;
+   gap:10px;
+  
+}
+
+.menu-route p i{
+    color:var(--text-color);
+}
+
+.order{
+    margin-bottom: 24px;
+  
+}
+.order h3{
+    margin-bottom: 5px;
+}
+
+.listProducts-right-btn,.products-left{
+    gap: 3px;
+}
+.listProducts-right-btn .btn i{
+    padding-right: 10px; 
+}
+
+.list-products{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  
+}
+.all-product-right .btn i{
+    
+    padding-left: 20px;
+   
+    
+}
+
+.listProducts-right-btn .btn-search{
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+}
+
+
+.all-products{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  
+}
+.all-products .btn i{
+    padding-right: 10px;
+}
+
+
+/* cards */
+.card-products{
+    margin-bottom: 24px;
+}
+.card{
+  border:1px solid var(--secondary-color);
+  border-radius: 12px;
+  border-color: var(--secondary-color);
+ 
+}
+
+.card h5{
+    padding:10px;
+}
+
+
+.img-card{
+    width: 100%;
+    height:150px;
+    background-color: #f5f5f5;
+    position: relative;
+    margin-bottom: 3px;
+    padding:30px;
+}
+
+.img-card span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.size ,.color{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding:10px;
+}
+.size p,.color p{
+    margin-bottom: 2px;
+}
+.size-btn .btn{  
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;      
+}
+.btn-active{
+    background: var(--secondary-color);
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .left-cards-bottom p{
+    margin-bottom: 1px;
+    font-weight: bold;
+  }
+  .cards-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    padding: 10px;
+   
+  }
+  .cards-bottom .btn {
+    border:1px solid var(--text-color);
+    text-align: center;
+
+  }
+
+  /* left-bar */
+.order-product{
+    padding:10px;
+   
+}
+.order-product-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+       
+}
+
+.order-product-title p btn{
+padding:10px;
+}
+  
+  .underline1{
+    border:1px solid var(--text-color);
+    border-bottom: var(--text-color);
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .item-select{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 24px; 
+  }
+  .item-select span{
+    color:red;
+    font-weight: bold;
+  }
+
+  .item-cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap:5px;
+    margin-bottom: 24px;
+    
+  }
+  .img-card1{
+    width:30%;
+     background-color: var(--secondary-color);
+  }
+  .item-card-right{
+   width:70%;
+  }
+   .img-card1 img{
+    width: 100px;
+    height: 100px;
+   }
+
+  .size-color{
+    display: flex;
+    align-items:start;
+    text-align: center;
+    justify-content: flex-start;
+    gap:4px;
+  }
+  .plus-minus{
+    display: flex;
+    align-items: start;
+    text-align: center;
+    justify-content: flex-start;
+    gap:4px;
+  }
+  .plus-minus .btn{
+     border:1px solid var(--secondary-color);
+  }
+.plus-minus-price{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.plus-minus-price p{
+    font-weight: bold;
+}
+
+.card-calcu{
+   background: var(--secondary-color); 
+   padding:10px;
+   border-radius: 12px;
+}
+
+.card-right-calcu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+ .card-right-calcu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.discount-code{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+} 
+
+.discount-code .btn{
+    border:1px solid var(--secondary-color);
+    border-radius: var(--secondary-color);
+    border-radius: 5px;
+}
+ .apply-btn{
+    background: var(--secondary-color);
+     border-radius: 5px;
+ }
+.credit-debit-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    text-align: center;
+    border:1px solid var(--secondary-color);
+    padding-top: 10px;
+    margin-bottom: 24px;
+}
+ .credit-debit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    color: var(--text-color);
+ }
+
+ .pay .btn{
+    background-color: var(--main-color);
+    color:#fff;
+    
+ }
+ .pay .btn i{
+    color:#fff;
+    padding-right: 5px;
+ }
+
+
+.right-bar-bottom{
+    margin-top: 110px;
+}
+

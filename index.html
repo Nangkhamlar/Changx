@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
-
     <link rel="stylesheet" href="./css/lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,33 +15,36 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="dashboard">
-                    <div class="logo">
-                        <img src="./images/changx.png" alt>
-                        <span>Changx</span>
-                    </div>
-                    <div class="menu">
-                        <div class="inner-menu">
-                            <p class="mb-2">Main Menu</p>
-                            <button class="btn"><i class="fa-solid  fa-clock "></i>Overviews</button><br>
-                            <button class="btn active"><i class="fa-solid text-white fa-cart-shopping"></i>Orders</button><br>
-                            <button class="btn"><i class="fa-solid fa-grip-vertical"></i>Categories</button><br>
-                            <button class="btn"><i class="fa-solid fa-circle-check"></i>Promos</button><br>
-                            <button class="btn"><i class="fa-solid fa-money-check-dollar"></i>Transcation</button><br>
-                            <p>Inventory</p>
-                            <button class="btn"><i class="fa-solid fa-shirt"></i>Products</button><br>
-                            <p>Reporting</p>
-                            <button class="btn"><i class="fa-solid fa-chart-simple"></i>Peports</button><br>
-                            <p>Setting</p>
-                            <button class="btn"><i class="fa-solid fa-user"></i>User
-                                Management</button><br>
-                            <button class="btn"><i class="fa-solid fa-money-check"></i>Bank
-                                Account</button><br>
-                            <button class="btn"><i class="fa-solid fa-truck"></i>Delivery
-                                Orders</button><br>
+                    <div class="left-bar-top">
+                        <div class="logo">
+                            <img src="./images/changx.png" alt>
+                            <span>Changx</span>
+                        </div>
+                        <div class="menu">
+                            <div class="inner-menu">
+                                <p class="mb-2">Main Menu</p>
+                                <button class="btn"><i class="fa-solid  fa-clock "></i>Overviews</button><br>
+                                <button class="btn active"><i
+                                        class="fa-solid text-white fa-cart-shopping"></i>Orders</button><br>
+                                <button class="btn"><i class="fa-solid fa-grip-vertical"></i>Categories</button><br>
+                                <button class="btn"><i class="fa-solid fa-circle-check"></i>Promos</button><br>
+                                <button class="btn"><i
+                                        class="fa-solid fa-money-check-dollar"></i>Transcation</button><br>
+                                <p>Inventory</p>
+                                <button class="btn"><i class="fa-solid fa-shirt"></i>Products</button><br>
+                                <p>Reporting</p>
+                                <button class="btn"><i class="fa-solid fa-chart-simple"></i>Peports</button><br>
+                                <p>Setting</p>
+                                <button class="btn"><i class="fa-solid fa-user"></i>User
+                                    Management</button><br>
+                                <button class="btn"><i class="fa-solid fa-money-check"></i>Bank
+                                    Account</button><br>
+                                <button class="btn"><i class="fa-solid fa-truck"></i>Delivery
+                                    Orders</button><br>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="cards marily-card">
+                    <div class="cards marily-card border">
                         <div class="marily">
                             <img src="./images/photo.png" alt>
                             <div class="mb-1">
@@ -71,24 +73,39 @@
                     </div>
                     <div class="list-products">
                         <h5 class="">List Products</h5>
-                        <div class="listProducts-right-btn">
-                            <button class="btn border"><i class="fa-solid fa-qrcode"></i>ScanCode</button>
-                            <button class="btn border"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                        <div class="listProducts-right">
+                            <button class="btn btn-outline"><i class="fa-solid fa-qrcode"></i>ScanCode</button>
+                            <div class="listProduct-right-input">
+                                <input type="text" name="" id="" placeholder="Search">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="all-products">
                         <div class="all-product-left">
-                            <button class="btn border"><i class="fa-solid fa-shirt"></i>All
+                            <button class="btn btn-outline"><i class="fa-solid fa-shirt"></i>All
                                 Products</button>
-                            <button class="btn border"><i class="fa-solid fa-person"></i>Men</button>
-                            <button class="btn border"><i class="fa-solid fa-person"></i>Women</button>
-                            <button class="btn border"><i class="fa-solid fa-children"></i>Kids</button>
-                            <button class="btn border"><i class="fa-solid fa-bag-shopping"></i>Accessories</button>
+                            <button class="btn btn-outline"><i class="fa-solid fa-person"></i>Men</button>
+                            <button class="btn btn-outline"><i class="fa-solid fa-person"></i>Women</button>
+                            <button class="btn btn-outline"><i class="fa-solid fa-children"></i>Kids</button>
+                            <button class="btn btn-outline"><i class="fa-solid fa-bag-shopping"></i>Accessories</button>
                         </div>
-                        <div class="all-product-right">
+                        <!-- <div class="all-product-right">
                             <button class="btn  border">Newest
                                 <span><i class="fa-solid fa-angle-down"></i></span></button>
+                        </div> -->
+                        <div class="dropdown">
+                            <button class="btn btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Newest
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -98,7 +115,7 @@
                                 <div class="card">
                                     <div style="padding: 10px;">
                                         <div class="img-card">
-                                            <img src="./images/photo1.png"  height="100px"  class="card-img-top" alt>
+                                            <img src="./images/photo1.png" height="100px" class="card-img-top" alt>
                                             <span class="btn ">Men</span>
                                         </div>
                                         <h5>White shirt</h5>
@@ -138,7 +155,8 @@
                                 <div class="card">
                                     <div style="padding: 10px;">
                                         <div class="img-card">
-                                            <img src="./images/photo2.png" height="100px" width="100px" class="card-img-top" alt>
+                                            <img src="./images/photo2.png" height="100px" width="100px"
+                                                class="card-img-top" alt>
                                             <span class="btn ">Women</span>
                                         </div>
                                         <h5>Aesthetic clothe</h5>
@@ -155,8 +173,8 @@
                                         <div class="color">
                                             <p>color</p>
                                             <div class="color-cricle">
-                                              
-                                                
+
+
                                                 <div class="dot bg-danger"></div>
                                                 <div class="dot"></div>
                                             </div>
@@ -179,7 +197,7 @@
                                 <div class="card">
                                     <div style="padding: 10px;">
                                         <div class="img-card">
-                                            <img src="./images/photo4.png"  height="100px"  class="card-img-top" alt>
+                                            <img src="./images/photo4.png" height="100px" class="card-img-top" alt>
                                             <span class="btn ">Accessories</span>
                                         </div>
                                         <h5>Bag</h5>
@@ -224,7 +242,7 @@
                                 <div class="card">
                                     <div style="padding: 10px;">
                                         <div class="img-card">
-                                            <img src="./images/photo6.png"  height="100px"  class="card-img-top" alt>
+                                            <img src="./images/photo6.png" height="100px" class="card-img-top" alt>
                                             <span class="btn ">Men</span>
                                         </div>
                                         <h5>Coat</h5>
@@ -281,8 +299,8 @@
                                         <div class="color">
                                             <p>color</p>
                                             <div class="color-cricle">
-                                              
-                                                
+
+
                                                 <div class="dot bg-danger"></div>
                                                 <div class="dot"></div>
                                             </div>
@@ -305,7 +323,7 @@
                                 <div class="card">
                                     <div style="padding: 10px;">
                                         <div class="img-card">
-                                            <img src="./images/photo4.png"  height="100px"  class="card-img-top" alt>
+                                            <img src="./images/photo4.png" height="100px" class="card-img-top" alt>
                                             <span class="btn ">Accessories</span>
                                         </div>
                                         <h5>Bag</h5>
@@ -349,133 +367,135 @@
             <div class="col-md-3">
                 <div class="order-product">
                     <div class="">
-                          <div class="order-product-title">
-                             <h5 style="margin-top:24px;">Order Products</h5>
-                             <p><div class="btn border"><i class="fa-solid fa-plus"></i></div></p>
-                          </div>
-                          <div class="underline1">
-                        <p></p>
-                          </div>
-                          <div class="item-select">
-                        <p>3 Item Select</p>
-                        <span>Clear All</span>
-                          </div>
-                          <div class="item-cards">
-                        <div class="img-card1">
-                            <img src="./images/photo1.png" alt>
+                        <div class="order-product-title">
+                            <h5 style="margin-top:24px;">Order Products</h5>
+                            <p>
+                            <div class="btn border"><i class="fa-solid fa-plus"></i></div>
+                            </p>
                         </div>
-                        <div class="item-card-right">
-                            <span>Men</span>
-                            <h5>White Shirt</h5>
-                            <div class="size-color">
-                                <p>Size:M</p>
-                                <p>Color:BW</p>
+                        <div class="underline1">
+                            <p></p>
+                        </div>
+                        <div class="item-select">
+                            <p>3 Item Select</p>
+                            <span>Clear All</span>
+                        </div>
+                        <div class="item-card">
+                            <div class="img-item-card">
+                                <img src="./images/photo1.png" alt>
                             </div>
-                            <div class="plus-minus-price">
-                                <div class="plus-minus">
-                                    <div class="btn"><i class="fa-solid fa-plus"></i></div>
-                                    <div>1</div>
-                                    <div class="btn"><i class="fa-solid fa-minus"></i></div>
+                            <div class="item-card-right">
+                                <span>Men</span>
+                                <h5>White Shirt</h5>
+                                <div class="size-color-item">
+                                    <p>Size:M</p>
+                                    <p>Color:BW</p>
                                 </div>
-                                <p>$45.95</p>
-                            </div>
-
-                        </div>
-
-                          </div>
-                          <div class="underline1">
-                        <p></p>
-                          </div>
-                          <div class="item-cards">
-                        <div class="img-card1">
-                            <img src="./images/photo5.png" alt>
-                        </div>
-                        <div class="item-card-right">
-                            <span>Women</span>
-                            <h5>Girl Dress</h5>
-                            <div class="size-color">
-                                <p>Size:M</p>
-                               
-                            </div>
-                            <div class="plus-minus-price">
-                                <div class="plus-minus">
-                                    <div class="btn"><i class="fa-solid fa-plus"></i></div>
-                                    <div>1</div>
-                                    <div class="btn"><i class="fa-solid fa-minus"></i></div>
+                                <div class="plus-minus-price">
+                                    <div class="plus-minus">
+                                        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                                        <div>1</div>
+                                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                                    </div>
+                                    <p>$45.95</p>
                                 </div>
-                                <p>$45.95</p>
+
                             </div>
 
                         </div>
-
-                          </div>
-                          <div class="underline1">
-                        <p></p>
-                          </div>
-                          <div class="item-cards">
-                        <div class="img-card1">
-                            <img src="./images/photo4.png" alt>
+                        <div class="underline1">
+                            <p></p>
                         </div>
-                        <div class="item-card-right">
-                            <span>Accessories</span>
-                            <h5>Bag</h5>
-                            <div class="size-color">
-                                <p>Size:M</p>
-                                
+                        <div class="item-card">
+                            <div class="img-item-card">
+                                <img src="./images/photo5.png" alt>
                             </div>
-                            <div class="plus-minus-price">
-                                <div class="plus-minus">
-                                    <div class="btn"><i class="fa-solid fa-plus"></i></div>
-                                    <div>1</div>
-                                    <div class="btn"><i class="fa-solid fa-minus"></i></div>
+                            <div class="item-card-right">
+                                <span>Women</span>
+                                <h5>Girl Dress</h5>
+                                <div class="size-color">
+                                    <p>Size:M</p>
+
                                 </div>
-                                <p>$45.95</p>
+                                <div class="plus-minus-price">
+                                    <div class="plus-minus">
+                                        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                                        <div>1</div>
+                                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                                    </div>
+                                    <p>$45.95</p>
+                                </div>
+
                             </div>
 
                         </div>
+                        <div class="underline1">
+                            <p></p>
+                        </div>
+                        <div class="item-card">
+                            <div class="img-item-card">
+                                <img src="./images/photo4.png" alt>
+                            </div>
+                            <div class="item-card-right">
+                                <span>Accessories</span>
+                                <h5>Bag</h5>
+                                <div class="size-color-item">
+                                    <p>Size:M</p>
 
-                          </div>
+                                </div>
+                                <div class="plus-minus-price">
+                                    <div class="plus-minus">
+                                        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                                        <div>1</div>
+                                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                                    </div>
+                                    <p>$45.95</p>
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
-
-                     <div class="right-bar-bottom">
-                         <div class="card-calcu">
+                    <div class="right-bar-bottom">
+                        <div class="card-calcu">
                             <div class="card-right-calcu">
-                               <p>SubTotal</p>
-                               <p>$82.75</p>
+                                <p>SubTotal</p>
+                                <p>$82.75</p>
                             </div>
                             <div class="card-right-calcu">
-                               <p>Discount</p>
+                                <p>Discount</p>
                                 <p>0</p>
                             </div>
                             <div class="card-right-calcu">
-                            <p>Sale Tax</p>
-                            <p>$8.75</p>
+                                <p>Sale Tax</p>
+                                <p>$8.75</p>
                             </div>
                             <div class="underline1">
-                              <p></p>
+                                <p></p>
                             </div>
                             <div class="card-right-calcu1">
-                               <p>Total Amount</p>
-                               <p>$91.5</p>
+                                <p>Total Amount</p>
+                                <p>$91.5</p>
                             </div>
 
-                         </div>
-                         <div class="discount-code">
-                           <div class="btn btn-outline">Discount Code</div>
-                           <div class="btn apply-btn">Apply</div>
-                         </div>
-                         <div class="credit-debit-card">
-                           <div class="credit-debit">
-                              <p> <i class="fa-solid fa-credit-card"></i></p>
-                               <p>Credit or Debit Card</p>
+                        </div>
+                        <div class="discount-code">
+                            <div class="">
+                                <input type="text" name="" class="form-control" placeholder="Discount Code">
                             </div>
-                            <p><i class="fa-solid fa-angle-down"></i></p>
-                         </div>
-                         <div class="pay">
+                            <button class="btn apply-btn">Apply</button>
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected><i class="fa-solid fa-credit-card"></i> Credit or Debit cards</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="pay">
                             <button class="btn w-100"><i class="fa-solid fa-credit-card"></i>Pay</button>
-                         </div>
-                     </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
